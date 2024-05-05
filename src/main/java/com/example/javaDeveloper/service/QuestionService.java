@@ -41,12 +41,12 @@ public class QuestionService {
     public int climbStairs(int steps){ // 1 <= steps <= 45
         int possibleWay = 1;
         int previousPossibleway = 0;
-        int currentPossibleWay = 0;
+        int beforePreviousPossibleWay = 0;
         
         for (int i = 0; i < steps; i++) {
-            currentPossibleWay = previousPossibleway + possibleWay;
+            beforePreviousPossibleWay = previousPossibleway + possibleWay;
             previousPossibleway = possibleWay;
-            possibleWay = currentPossibleWay;
+            possibleWay = beforePreviousPossibleWay;
         }
         
         return possibleWay;
