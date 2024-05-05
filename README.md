@@ -1,4 +1,4 @@
-# Quick guild
+# Quick guide
 1. install JDK 21 https://www.oracle.com/java/technologies/downloads/#java21
 2. install MVN https://maven.apache.org/download.cgi
 3. run java project
