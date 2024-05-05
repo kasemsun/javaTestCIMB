@@ -27,16 +27,31 @@ public class QuestionController {
 
 	@PostMapping("/buystock")
 	public int buyStock(@RequestBody BuyStockInput buyStockInput)  {
-		return questionService.buyStock(buyStockInput.price);
+		try {
+			return questionService.buyStock(buyStockInput.price);
+		} catch (Exception e) {
+			throw  e;
+		}
+		
 	}
 
     @PostMapping("/compareVersion")
 	public int compareVersion(@RequestBody VersionInput versionInput)  {
-		return questionService.compareVersion(versionInput.version1,versionInput.version2);
+		try {
+			return questionService.compareVersion(versionInput.version1,versionInput.version2);
+		} catch (Exception e) {
+			throw e;
+		}
+		
 	}
 
     @PostMapping("/climbStairs")
 	public int climbStairs(@RequestBody StairsInput stairsInput)  {
-		return questionService.climbStairs(stairsInput.stairsSteps);
+		try {
+			return questionService.climbStairs(stairsInput.stairsSteps);
+		} catch (Exception e) {
+			throw e;
+		}
+		
 	}
 }
