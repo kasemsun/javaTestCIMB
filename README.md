@@ -41,7 +41,7 @@
 ## Question 4
    - The most hardest question is question 2 compareVersion.
    - Why it is hard?
-     - it cant direct compare as a numeric like other question
+     - it can't direct compare as a numeric like other question. It need to change from string to numeric before.
      - it had to handle case  like version1 = "1.0", version2 = "1.0.0" is equal version
      - it had to handle case  version1 = "01", version2 = "1" is equal version
    - What kind of solution that you solve it?
